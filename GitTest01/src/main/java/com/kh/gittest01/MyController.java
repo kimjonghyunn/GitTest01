@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class MyController {
 	@RequestMapping(value="/hello",method=RequestMethod.GET)
 	public String hello() throws Exception{
-		return null;
+		System.out.println("Hello");
+		return "home";
 		
 	}
 }
